@@ -1,6 +1,5 @@
 import streamlit as st
 import pandas as pd
-import matplotlib.pyplot as plt
 
 # Title
 st.title("GLP-1 Cost Impact Modeling Tool")
@@ -45,12 +44,3 @@ results.append({
 results_df = pd.DataFrame(results)
 st.write("### Projected 3-Year Total Cost Impact")
 st.dataframe(results_df)
-
-fig, ax = plt.subplots()
-ax.plot(results_df["Year"], results_df["Min Total Cost"], marker='o', label="Min Total Cost")
-ax.plot(results_df["Year"], results_df["Max Total Cost"], marker='o', label="Max Total Cost")
-ax.set_title("3-Year Total Cost Impact")
-ax.set_xlabel("Year")
-ax.set_ylabel("Total Cost ($)")
-ax.legend()
-st.pyplot(fig)
