@@ -12,7 +12,7 @@ This tool estimates the **3-year total cost** of GLP-1 usage for an employer hea
 #### **Step-by-Step Calculation Logic:**
 
 1. **Determine Members on GLP-1**  
-   We calculate the number of members projected to be on a GLP-1 medication by taking the percentage of individuals are who overweight.
+   We calculate the number of members projected to be on a GLP-1 medication by taking the percentage of individuals who are overweight.
 2. **Adjust Medical Costs Based on Adherence**  
 GLP-1 adherence affects overall medical cost trajectory:
             **High adherence** reduces medical spend by 31%
