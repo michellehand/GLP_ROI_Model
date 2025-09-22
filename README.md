@@ -4,6 +4,8 @@
 
 This interactive dashboard models the financial impact of GLP-1 medication use across various levels of member adherence and plan demographics. Built using Streamlit and Python, it allows users to simulate cost outcomes under different population and adherence scenarios, supporting data-driven strategy for employers, payers, and consultants navigating the evolving landscape of obesity and diabetes care.
 
+Click link to be taken to streamlit app: https://glproimodel-hbouzpyuvbtvmzup4wvfkb.streamlit.app/
+
 ⸻
 
 🎯 Objectives
