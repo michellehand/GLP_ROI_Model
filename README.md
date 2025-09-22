@@ -70,6 +70,7 @@ To run locally:
 ```bash
 pip install streamlit pandas numpy matplotlib
 streamlit run app.py
+```
 
 ### Why This Matters
 
