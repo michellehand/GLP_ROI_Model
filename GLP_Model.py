@@ -12,7 +12,7 @@ This tool estimates the **3-year total cost** of GLP-1 usage for an employer hea
 #### **Step-by-Step Calculation Logic:**
 
 1. **Determine Members on GLP-1**  
-   We calculate the number of members projected to be on a GLP-1 medication:
+   We calculate the number of members projected to be on a GLP-1 medication by taking the percentage of individuals are who overweight.
 2. **Adjust Medical Costs Based on Adherence**  
 GLP-1 adherence affects overall medical cost trajectory:
             **High adherence** reduces medical spend by 31%
@@ -25,9 +25,9 @@ Each GLP-1 drug has a 3-year **minimum and maximum** cost range:
 For all members on GLP-1, we estimate the 3-year cost as:
 The adjusted medical cost over 3 years:
 #### **Outputs:**
-# **Members on GLP-1**: Based on plan size and uptake rate  
-# **Min Total Cost**: Conservative estimate using lower drug cost  
-# **Max Total Cost**: Upper-bound estimate using higher drug cost
+**Members on GLP-1**: Based on plan size and uptake rate  
+**Min Total Cost**: Conservative estimate using lower drug cost  
+**Max Total Cost**: Upper-bound estimate using higher drug cost
 """)
 
 # Inputs
