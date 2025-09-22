@@ -15,19 +15,19 @@ This tool estimates the **3-year total cost** of GLP-1 usage for an employer hea
    We calculate the number of members projected to be on a GLP-1 medication:
 2. **Adjust Medical Costs Based on Adherence**  
 GLP-1 adherence affects overall medical cost trajectory:
-- **High adherence** reduces medical spend by 31%
-- **Low adherence** increases it by 34%
+            **High adherence** reduces medical spend by 31%
+            **Low adherence** increases it by 34%
 3. **Incorporate Drug Costs**  
 Each GLP-1 drug has a 3-year **minimum and maximum** cost range:
-- For example, Wegovy = $5,000–$7,000 per year  
-- Total drug cost = annual cost × 3 years
+            For example, Wegovy = 5,000–7,000 per year
+            Total drug cost = annual cost × 3 years
 4. **Calculate Total Cost Ranges**
 For all members on GLP-1, we estimate the 3-year cost as:
 The adjusted medical cost over 3 years:
 #### **Outputs:**
-- **Members on GLP-1**: Based on plan size and uptake rate  
-- **Min Total Cost**: Conservative estimate using lower drug cost  
-- **Max Total Cost**: Upper-bound estimate using higher drug cost
+# **Members on GLP-1**: Based on plan size and uptake rate  
+# **Min Total Cost**: Conservative estimate using lower drug cost  
+# **Max Total Cost**: Upper-bound estimate using higher drug cost
 """)
 
 # Inputs
