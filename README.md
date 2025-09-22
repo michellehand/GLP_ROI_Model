@@ -1,69 +1,79 @@
-📊 GLP-1 Outcomes Modeling Dashboard
+# GLP-1 Outcomes Modeling Dashboard
 
-🧪 Project Overview
+## Project Overview
 
-This interactive dashboard models the financial impact of GLP-1 medication use across various levels of member adherence and plan demographics. Built using Streamlit and Python, it allows users to simulate cost outcomes under different population and adherence scenarios, supporting data-driven strategy for employers, payers, and consultants navigating the evolving landscape of obesity and diabetes care.
+This interactive dashboard models the **financial impact of GLP-1 medication use** (e.g., Wegovy, Zepbound, Saxenda) across different levels of adherence and plan demographics. Built in Python with Streamlit, it allows users to simulate cost outcomes under customizable scenarios.
 
-Click link to be taken to streamlit app: https://glproimodel-hbouzpyuvbtvmzup4wvfkb.streamlit.app/
+The goal is to support **employers, payers, and consultants** in understanding the trade-offs of covering GLP-1 drugs within commercial health plans—particularly in the context of obesity and diabetes management.
 
-⸻
+**Live App**: [Launch the Streamlit App](https://glproimodel-hbouzpyuvbtvmzup4wvfkb.streamlit.app/)
 
-🎯 Objectives
-	•	Estimate the total cost impact (drug + medical cost offsets) of GLP-1 medications like Wegovy, Zepbound, and Saxenda.
-	•	Model changes over a 3-year time horizon using adherence-based medical cost adjustments.
-	•	Provide adjustable parameters such as:
-	•	Population size
-	•	Percent of members eligible for GLP-1s
-	•	Drug selection and adherence tier
-	•	Timeframe (Year 1–3 cost modeling)
+---
 
-🔍 Key Assumptions
-Variable
-Value
-% of overweight/obese members on GLP-1s
-19%
-Drug costs per year per member:
-Wegovy: $5,000–$7,000Zepbound: $2,000–$3,000Saxenda: $2,000–$5,000
-Medical cost impact (vs baseline):
-Adherent (≥65% PDC): ↓31%Non-adherent (<20% PDC): ↑34%
-GLP-1 population uptake
-Adjustable (start with 1–5% of total members)
-Time horizon
-3 years
-Baseline annual medical cost per member
-$10,000 (default, editable)
+## Objectives
 
-🛠️ Tools & Technologies
-	•	Python (Pandas, NumPy)
-	•	Streamlit (interactive frontend)
-	•	Matplotlib / Plotly (charts)
-	•	Git/GitHub (version control)
+- Estimate the total cost impact (drug costs + medical cost offsets) of GLP-1 medications.
+- Model changes over a 3-year time horizon using adherence-based medical cost adjustments.
+- Provide adjustable inputs including:
+  - Plan size
+  - Percent of members eligible for GLP-1s
+  - Drug selection (Wegovy, Zepbound, Saxenda)
+  - Adherence level
+  - Time horizon (3-year projection)
 
-⸻
+---
 
-📈 How It Works
+## Key Assumptions
 
-Users adjust sliders and dropdowns to define:
-	•	Plan size
-	•	Drug choice
-	•	Percent adherence
-	•	Expected member uptake
+| Variable                             | Value/Range                          |
+|--------------------------------------|--------------------------------------|
+| Percent of overweight/obese members on GLP-1s | 19% (adjustable)              |
+| Drug costs per year per member       | Wegovy: $5,000–$7,000  <br> Zepbound: $2,000–$3,000 <br> Saxenda: $2,000–$5,000 |
+| Medical cost impact vs baseline      | High adherence (≥65% PDC): −31% <br> Low adherence (<20% PDC): +34% |
+| GLP-1 uptake                         | Adjustable (default 1–5% of total members) |
+| Time horizon                         | 3 years                              |
+| Baseline medical cost per member     | $10,000/year (default, editable)     |
 
-The app then calculates:
-	•	Total drug costs per year
-	•	Medical cost offsets (or increases)
-	•	Cumulative cost impact over 3 years
-	•	Comparison charts by drug and adherence level
+---
 
-🚀 Getting Started
+## Tools & Technologies
 
-🔧 Prerequisites
-	•	Python 3.9+
-	•	pip install streamlit pandas numpy
+- **Python**: Pandas, NumPy
+- **Streamlit**: Interactive frontend
+- **Matplotlib / Plotly**: Visualization
+- **GitHub**: Version control and collaboration
 
-💡 Why This Matters
+---
 
-GLP-1 medications are revolutionizing obesity and diabetes care—but they come at a high cost. This tool helps stakeholders:
-	•	Model financial tradeoffs across adherence levels
-	•	Estimate ROI over time
-	•	Explore strategic coverage policies grounded in data
+## How It Works
+
+Users adjust parameters using sliders and dropdowns to define:
+- Plan size and population assumptions
+- GLP-1 drug selection
+- Adherence level (high vs. low)
+- Projected member uptake
+
+The app calculates:
+- Annual and cumulative drug costs
+- Expected medical cost offsets (or increases)
+- Total 3-year impact per drug and adherence level
+- Dynamic charts for visual comparison
+
+---
+
+## Getting Started
+
+### Prerequisites
+
+To run locally:
+
+```bash
+pip install streamlit pandas numpy matplotlib
+streamlit run app.py
+
+### Why This Matters
+
+GLP-1 medications are transforming obesity and diabetes care—but they also come with significant costs. This dashboard helps stakeholders:
+- Explore financial tradeoffs under real-world scenarios
+- Understand the ROI of covering GLP-1s at different adherence levels
+- Make informed, data-driven decisions about benefit design and plan policy
