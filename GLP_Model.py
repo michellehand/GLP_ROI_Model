@@ -9,7 +9,7 @@ plan_size = st.number_input("Plan Size (Number of Members)", min_value=100, max_
 percent_on_glp1 = st.slider("Percent of Overweight Members on GLP-1", 0.0, 100.0, 19.0) / 100
 base_medical_cost = st.number_input("Base Yearly Medical Cost", min_value=0, max_value=1000000, value=10000)
 drug_selected = st.selectbox("Select GLP-1 Drug", ["Wegovy", "Zepbound", "Saxenda"])
-adherence_level = st.selectbox("Adherence Level", ["High (>=65% PDC)", "Low (<20% PDC)", "Medium"])
+adherence_level = st.selectbox("Adherence Level", ["High (>=65% PDC)", "Low (<20% PDC)"])
 
 # Assumptions
 drug_costs = {
@@ -20,8 +20,7 @@ drug_costs = {
 
 adherence_impact = {
     "High (>=65% PDC)": -0.31,
-    "Low (<20% PDC)": 0.34,
-    "Medium": 0.00
+    "Low (<20% PDC)": 0.34
 }
 
 # Calculations
