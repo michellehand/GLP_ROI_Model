@@ -4,6 +4,32 @@ import pandas as pd
 # Title
 st.title("GLP-1 Cost Impact Modeling Tool")
 
+# Add summary to the app
+st.markdown("""
+### GLP-1 Cost Impact Calculation Summary
+
+This tool estimates the **3-year total cost** of GLP-1 usage for an employer health plan, factoring in medication expenses and changes in medical costs due to adherence.
+#### **Step-by-Step Calculation Logic:**
+
+1. **Determine Members on GLP-1**  
+   We calculate the number of members projected to be on a GLP-1 medication:
+2. **Adjust Medical Costs Based on Adherence**  
+GLP-1 adherence affects overall medical cost trajectory:
+- **High adherence** reduces medical spend by 31%
+- **Low adherence** increases it by 34%
+3. **Incorporate Drug Costs**  
+Each GLP-1 drug has a 3-year **minimum and maximum** cost range:
+- For example, Wegovy = $5,000–$7,000 per year  
+- Total drug cost = annual cost × 3 years
+4. **Calculate Total Cost Ranges**
+For all members on GLP-1, we estimate the 3-year cost as:
+The adjusted medical cost over 3 years:
+#### **Outputs:**
+- **Members on GLP-1**: Based on plan size and uptake rate  
+- **Min Total Cost**: Conservative estimate using lower drug cost  
+- **Max Total Cost**: Upper-bound estimate using higher drug cost
+""")
+
 # Inputs
 plan_size = st.number_input("Plan Size (Number of Members)", min_value=100, max_value=1000000, value=10000)
 percent_on_glp1 = st.slider("Percent of Overweight Members on GLP-1", 0.0, 100.0, 19.0) / 100
